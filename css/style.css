@@ -1,0 +1,213 @@
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  line-height: 1.4;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/
+}
+
+h1 {
+  font-size: 3.5em;
+}
+
+
+
+/* Highlights */
+
+.highlight {
+  color: #FF4444;
+}
+
+.p-highlight {
+  color: #FF8888;
+}
+
+/* Header/Nav Area */
+header li {
+  list-style-type: none;
+}
+
+
+/* Video/Showcase Area */
+
+.video-overlay {
+  padding-top: 1em;
+  background-color: rgba(0,0,0,0.5);
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#myVideo {
+  position: fixed;
+  z-index: -2;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.self-image {
+  border-radius: 50%;
+  border: 3px solid white;
+}
+
+/* About Me */
+
+#about-me {
+  padding: 2em 0 0 0;
+}
+
+/* Spacer */
+
+.white-fill {
+  background-color: #fff;
+}
+
+#spacer img {
+  width: 100%;
+  
+}
+
+#spacer h3 {
+  margin-bottom: 0;
+}
+
+
+
+/* Portfolio */
+#portfolio {
+  z-index: 0;
+  background-color: #FFF;
+}
+
+/*/////// CARD EFFECTS //////////*/
+
+/* Generic Card Effects */
+
+#portfolio .row {
+  justify-content: space-between;
+}
+
+.card {
+  margin: 1em;
+  float: left;
+  border: 5px solid #cecece;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  box-shadow: 1px 1px 2px #e6e6e6;
+  cursor: default;
+  background: #fff;
+}
+
+.card .card-body {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.card img {
+  display: block;
+  position: relative;
+}
+
+.card h5 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  margin: 20px 0 0 0;
+}
+
+.card p {
+  font-style: italic;
+  position: relative;
+  color: #fff;
+  padding: 0px 20px 0px;
+  text-align: center;
+}
+
+.card a.btn{
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: #FF4444;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000;
+}
+
+.card a.btn:hover {
+  box-shadow: 0 0 5px #000;
+}
+
+
+/* Card Transitions */ 
+
+.card img {
+  transition: all 0.2s linear;
+  width: 300px;
+  height: 200px;
+}
+
+.card .card-body {
+  opacity: 0;
+  background-color: rgba(91, 148, 239, 0.44);
+  transition: all 0.4s ease-in-out;
+}
+
+.card h5 {
+  transform: translateY(-100px);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.card p {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: all 0.15s linear;
+}
+
+.card a.btn {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+ /* Card Hover Effects */ 
+
+.card:hover img {
+  transform: scale(1.2);
+}
+
+.card:hover .card-body {
+  opacity: 1;
+}
+
+.card:hover h5,
+.card:hover p,
+.card:hover a.btn {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.card:hover p {
+  transition-delay: 0.1s;
+}
+
+.card:hover a.btn {
+  transition-delay: 0.2s;
+}
