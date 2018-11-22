@@ -93,7 +93,7 @@ header li {
 /* Generic Card Effects */
 
 #portfolio .row {
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .card {
@@ -166,7 +166,7 @@ header li {
 
 .card .card-body {
   opacity: 0;
-  background-color: rgba(91, 148, 239, 0.44);
+  background-color: rgba(91, 148, 239, 0.75);
   transition: all 0.4s ease-in-out;
 }
 
@@ -190,7 +190,7 @@ header li {
  /* Card Hover Effects */ 
 
 .card:hover img {
-  transform: scale(1.2);
+  transform: scale(1.3);
 }
 
 .card:hover .card-body {
@@ -210,4 +210,12 @@ header li {
 
 .card:hover a.btn {
   transition-delay: 0.2s;
+}
+
+
+/* Media Queries */
+@media (min-width: 1200px) {
+    #portfolio .row {
+    justify-content: space-between;
+  }
 }
