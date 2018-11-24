@@ -10,14 +10,17 @@
 body {
   line-height: 1.4;
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  /*font-family: 'Roboto', sans-serif;*/
+  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
   font-size: 3.5em;
 }
 
-
+p {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 1.1em;
+}
 
 /* Highlights */
 
@@ -40,14 +43,14 @@ header li {
 .video-overlay {
   padding-top: 1em;
   background-color: rgba(0,0,0,0.5);
-  z-index: -1;
+  z-index: -9;
   min-width: 100%;
   min-height: 100%;
 }
 
 #myVideo {
   position: fixed;
-  z-index: -2;
+  z-index: -10;
   right: 0;
   bottom: 0;
   min-width: 100%; 
@@ -86,6 +89,7 @@ header li {
 #portfolio {
   z-index: 0;
   background-color: #FFF;
+  padding: 1em 0 3em 0;
 }
 
 /*/////// CARD EFFECTS //////////*/
@@ -126,7 +130,7 @@ header li {
 
 .card h5 {
   text-transform: uppercase;
-  color: #fff;
+  color: #FF4444;
   text-align: center;
   position: relative;
   padding: 10px;
@@ -143,6 +147,7 @@ header li {
 
 .card a.btn{
   display: inline-block;
+  font-size: 14px;
   text-decoration: none;
   padding: 7px 14px;
   background: #FF4444;
@@ -158,6 +163,10 @@ header li {
 
 /* Card Transitions */ 
 
+.card {
+  transition: all 0.5s ease-in-out;
+}
+
 .card img {
   transition: all 0.2s linear;
   width: 300px;
@@ -166,7 +175,7 @@ header li {
 
 .card .card-body {
   opacity: 0;
-  background-color: rgba(91, 148, 239, 0.75);
+  background-color: rgba(0, 0, 0, 0.85);
   transition: all 0.4s ease-in-out;
 }
 
@@ -188,6 +197,11 @@ header li {
 }
 
  /* Card Hover Effects */ 
+
+.card:hover {
+  box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+  border-color: red;
+}
 
 .card:hover img {
   transform: scale(1.3);
@@ -212,10 +226,46 @@ header li {
   transition-delay: 0.2s;
 }
 
+/* Form Group */
+#form-grp .container {
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+#form-grp h3{
+  text-align: left;
+}
+
+#form-grp form {
+  text-align: center;
+}
+
+#form-grp form input,
+#form-grp form textarea {
+  border-radius: 5px;
+  width: 400px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #FF4444;
+  background-color: #fff;
+}
+
+footer h6 {
+  margin: 0;
+  padding: 1em 0 1em 0;
+}
 
 /* Media Queries */
 @media (min-width: 1200px) {
     #portfolio .row {
     justify-content: space-between;
+  }
+    #form-grp form input,
+    #form-grp form textarea {
+      border-radius: 5px;
+      width: 500px;
   }
 }
