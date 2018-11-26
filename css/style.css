@@ -37,7 +37,9 @@ p {
 }
 
 /* Header/Nav Area */
-
+header nav {
+  border-bottom: 1px solid #FF4444;;
+}
 
 nav ul li a,
 nav ul li a:after,
@@ -74,8 +76,16 @@ nav.stroke ul li a:hover:after {
 
 /* Video/Showcase Area */
 
+.icons {
+  padding-top: .5em;
+}
+
+.icons a {
+  padding: .5em .5em .5em .5em;
+}
+
 .video-overlay {
-  padding-top: 3em;
+  padding-top: 11em;
   background-color: rgba(0,0,0,0.5);
   z-index: -9;
   min-width: 100%;
@@ -94,6 +104,11 @@ nav.stroke ul li a:hover:after {
 .self-image {
   border-radius: 50%;
   border: 3px solid white;
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
 }
 
 /* About Me */
@@ -362,6 +377,9 @@ footer h6 {
 @media (min-width: 570px) {
     nav.stroke ul li a:hover:after {
     width: 100%;
+  }
+    .video-overlay {
+    padding-top: 4em;
   }
 }
 

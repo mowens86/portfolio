@@ -10,12 +10,33 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- CSS Style Sheets -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto|Yanone+Kaffeesatz" rel="stylesheet">
 
-    <title>My Portfolio</title>
+    <title>Michael Owens | Web Development & Design</title>
   </head>
   <body>
 
@@ -23,16 +44,16 @@
 
     <header class="bg-light">
       <div class="container">
-        <nav class="navbar-expand-lg navbar-light bg-light stroke">
+        <nav class="navbar-expand-lg navbar-light bg-light fixed-top stroke">
           <ul class="nav justify-content-center flex-column flex-sm-row text-center">
             <li class="nav-item">
               <a class="nav-link highlight" href="#showcase">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link highlight" href="#spacer">Porfolio</a>
+              <a class="nav-link highlight" href="#about-me">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link highlight" href="#about-me">About Me</a>
+              <a class="nav-link highlight" href="#spacer">Porfolio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link highlight" href="#form-grp">Contact Me</a>
@@ -53,8 +74,15 @@
           <source src="img/portfolio.mp4" type="video/mp4">
         </video>
         <div class="container">
-          <img class="self-image mx-auto d-block" src="img/MJO.JPG" alt="MJO">
-          <h1>Hi, <br>I'm <span class="highlight">Mike</span>, <br>a <span class="highlight">simple web developer</span>.</h1>
+          <img class="self-image mx-auto d-block" src="img/MJO.JPG" alt="Hi I'm Mike" title="Hi, I'm Mike">
+          <div class="icons text-center">
+            <a href="https://github.com/mowens86/" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://codepen.io/mowens86/" target="_blank"><i class="fab fa-codepen fa-2x"></i></a>
+            <a href="#form-grp"><i class="fas fa-envelope fa-2x"></i></a>
+          </div>  
+          <h1>Hi, <br>
+            I'm <span class="highlight">Mike</span>, <br>
+            a <span class="highlight">simple  <span class="txt-type" data-wait="3000" data-words='["developer.", "designer.", "creator."]'></span></span></h1>
           <h6>Aspiring <span class="highlight">Full Stack Geek</span>, and <span class="highlight">Part-Time Developer</span></h6>
         </div>
       </section>
