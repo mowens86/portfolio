@@ -1,5 +1,9 @@
 
 /* Base Styles */
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -33,15 +37,45 @@ p {
 }
 
 /* Header/Nav Area */
-header li {
-  list-style-type: none;
+
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+nav ul li a:hover {
+  color: #555;
+}
+
+
+nav.stroke ul li a {
+  position: relative;
+}
+
+nav.stroke ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 3px;
+}
+
+nav.stroke ul li a:hover:after {
+  width: 50%;
 }
 
 
 /* Video/Showcase Area */
 
 .video-overlay {
-  padding-top: 1em;
+  padding-top: 3em;
   background-color: rgba(0,0,0,0.5);
   z-index: -9;
   min-width: 100%;
@@ -232,7 +266,6 @@ header li {
   background-color: #fff;
   border-radius: 5px;
   margin: auto;
-
 }
 
 
@@ -241,10 +274,18 @@ header li {
   text-align: center;
 }
 
+#form-grp form h3 {
+  padding: 1em 0;
+}
+
 #form-grp form input,
 #form-grp form textarea {
+  background-color: #ededed;
   border-radius: 5px;
   width: 300px;
+  color: #000;
+  padding: .5em 0 .5em 1em;
+  margin: .5em 0;
 }
 
 /* Button Effect */
@@ -264,7 +305,7 @@ header li {
 }
 
 #form-grp form .btn-room {
-  padding-bottom: 2em;
+  padding-bottom: 2.5em;
 }
 
 #form-grp form .btn:before {
@@ -311,9 +352,22 @@ footer h6 {
     #portfolio .row {
     justify-content: space-between;
   }
+
     #form-grp form input,
     #form-grp form textarea {
-      border-radius: 5px;
       width: 500px;
   }
+}
+
+@media (min-width: 570px) {
+    nav.stroke ul li a:hover:after {
+    width: 100%;
+  }
+}
+
+@media (min-width: 800px) {
+    #form-grp .col-sm-8 {
+    width: 50%;
+  }
+
 }
