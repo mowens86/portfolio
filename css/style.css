@@ -29,16 +29,38 @@ p {
   color: #FF4444;
 }
 
+.highlight-2 {
+  color: #7ACFD6;
+}
+
 .p-highlight {
   color: #FF8888;
 }
 /*/////////////////////////////*/
 /* HEADER/NAV AREA*/
 
+/* Sticky Nav */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  border-bottom: 2px solid #aaa;
+}
+
+#showcase {
+  padding-top: 5em;
+}
+
 /* Nav Bar Toggler Button */
 
 .navbar-toggler {
-  border: 1px solid #aaa;
+  border: 2px solid #555;
+}
+
+.navbar-toggler:focus {
+  outline: 1px solid #fa2222;;
+  outline: 5px auto -webkit-focusring-color;
 }
 
 /* Nav Logo Animation */
@@ -49,17 +71,17 @@ nav div img {
 }
 
 nav div img:hover {
-  transform: rotate(-180deg);
+  transform: rotate(-45deg);
 }
 
 nav div .logo-border {
-  border: 2px solid #aaa;
+  border: 2px solid #555;
   transition: transform .5s;
   
 }
 
 nav div .logo-border:hover {
-  transform: rotate(180deg);
+  transform: rotate(45deg);
 }
 
 nav ul li a,
@@ -104,6 +126,15 @@ nav.stroke ul li a:hover:after {
 
 .icons a {
   padding: .5em .5em .5em .5em;
+}
+
+.fab, .fas {
+  transition: all .2s ease-in-out;
+}
+
+.fab:hover, .fas:hover {
+  color: #fa2222;
+  transform: scale(1.2);
 }
 
 .video-overlay {
@@ -204,7 +235,7 @@ nav.stroke ul li a:hover:after {
 
 .card h5 {
   text-transform: uppercase;
-  color: #FF4444;
+  color: #FF1111;
   text-align: center;
   position: relative;
   padding: 10px;
@@ -274,7 +305,7 @@ nav.stroke ul li a:hover:after {
 
 .card:hover {
   box-shadow: 20px 20px 20px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-  border-color: red;
+  border-color: #FF2222;
 }
 
 .card:hover img {
@@ -301,12 +332,39 @@ nav.stroke ul li a:hover:after {
 }
 
 /*/////////////////////////////*/
+/* SPACER 2 */
+
+/*
+.pic-overlay {
+  background-color: rgba(0,0,0,0.5);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+}
+*/
+
+#spacer-2 {
+  background:
+    linear-gradient(0deg, rgba(0,0,0,0.3), rgba(250,17,17,0.3)), 
+    url("../img/computer.jpg");
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -3;
+}
+
+
+
+/*/////////////////////////////*/
 /* FORM GROUP */
 
 #form-grp .col-sm-8 {
   background-color: #fff;
   border-radius: 5px;
-  margin: auto;
+  margin: auto auto 1em auto;
+  border: 5px solid #aaa;
 }
 
 
@@ -340,7 +398,7 @@ nav.stroke ul li a:hover:after {
   text-transform: none;
   font-family: arial;
   background-color: #fff;
-  border: 2px solid #262626;
+  border: 2px solid #555;
   padding: 10px 50px;
   overflow: hidden;
 }
@@ -356,7 +414,7 @@ nav.stroke ul li a:hover:after {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: #ff003b;
+  background: #fa2222;
   transition: .5s ease-in-out;
   z-index: -1;  
 }

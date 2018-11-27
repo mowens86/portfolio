@@ -69,3 +69,24 @@ function init() {
 	// Init Typewrite
 	new TypeWriter(txtElement, words, wait);
 }
+
+/////////////////////////////////////////////
+//////// STICKY NAV BAR
+
+// When the user scrolls the page, execute scrollFunction
+window.onscroll = function() {scrollFunction()};
+
+// Get the navbar
+let navbar = document.getElementById("navBar");
+
+// Get the offset position of the navbar
+let sticky = navBar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove the "sticky" when you leave the scroll position
+function scrollFunction() {
+	if (window.pageYOffset >= sticky) {
+		navBar.classList.add("sticky");
+	} else {
+		navBar.classList.remove("sticky");
+	}
+}
