@@ -1,5 +1,6 @@
 
-/* Base Styles */
+/*/////////////////////////////*/
+/* BASE STYLES */
 html {
   scroll-behavior: smooth;
 }
@@ -17,13 +18,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-h1 {
-  font-size: 3.5em;
-}
-
 p {
   font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size: 1.1em;
+  font-size: .8em;
 }
 
 /* Highlights */
@@ -35,10 +32,34 @@ p {
 .p-highlight {
   color: #FF8888;
 }
+/*/////////////////////////////*/
+/* HEADER/NAV AREA*/
 
-/* Header/Nav Area */
-header nav {
-  border-bottom: 1px solid #FF4444;;
+/* Nav Bar Toggler Button */
+
+.navbar-toggler {
+  border: 1px solid #aaa;
+}
+
+/* Nav Logo Animation */
+nav div img {
+  width: 40px;
+  height: 40px;
+  transition: transform .5s;
+}
+
+nav div img:hover {
+  transform: rotate(-180deg);
+}
+
+nav div .logo-border {
+  border: 2px solid #aaa;
+  transition: transform .5s;
+  
+}
+
+nav div .logo-border:hover {
+  transform: rotate(180deg);
 }
 
 nav ul li a,
@@ -52,6 +73,7 @@ nav ul li a:hover {
 }
 
 
+/* Stroke Animation */
 nav.stroke ul li a {
   position: relative;
 }
@@ -73,8 +95,8 @@ nav.stroke ul li a:hover:after {
   width: 50%;
 }
 
-
-/* Video/Showcase Area */
+/*/////////////////////////////*/
+/* VIDEO/SHOWCASE AREA */
 
 .icons {
   padding-top: .5em;
@@ -85,7 +107,7 @@ nav.stroke ul li a:hover:after {
 }
 
 .video-overlay {
-  padding-top: 11em;
+  padding-top: 1em;
   background-color: rgba(0,0,0,0.5);
   z-index: -9;
   min-width: 100%;
@@ -102,6 +124,8 @@ nav.stroke ul li a:hover:after {
 }
 
 .self-image {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 3px solid white;
 }
@@ -111,7 +135,8 @@ nav.stroke ul li a:hover:after {
   border-right: 0.2rem solid #777;
 }
 
-/* About Me */
+/*/////////////////////////////*/
+/* ABOUT ME */
 
 #about-me {
   padding: 2em 0 0 0;
@@ -133,8 +158,8 @@ nav.stroke ul li a:hover:after {
 }
 
 
-
-/* Portfolio */
+/*/////////////////////////////*/
+/* PORTFOLIO */
 #portfolio {
   z-index: 0;
   background-color: #FFF;
@@ -275,7 +300,8 @@ nav.stroke ul li a:hover:after {
   transition-delay: 0.2s;
 }
 
-/* Form Group */
+/*/////////////////////////////*/
+/* FORM GROUP */
 
 #form-grp .col-sm-8 {
   background-color: #fff;
@@ -350,7 +376,8 @@ nav.stroke ul li a:hover:after {
   color: #fff;
 }
 
-/* Footer */
+/*/////////////////////////////*/
+/* FOOTER */
 footer {
   text-align: center;
   color: #FF4444;
@@ -362,7 +389,9 @@ footer h6 {
   padding: 1em 0 1em 0;
 }
 
-/* Media Queries */
+
+/*/////////////////////////////*/
+/* MEDIA QUERIES */
 @media (min-width: 1200px) {
     #portfolio .row {
     justify-content: space-between;
@@ -375,12 +404,29 @@ footer h6 {
 }
 
 @media (min-width: 570px) {
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    p {
+      font-size: 1.1em;
+  }
+
     nav.stroke ul li a:hover:after {
     width: 100%;
   }
+  
     .video-overlay {
-    padding-top: 4em;
+    padding-top: 2em;
   }
+  
+    .self-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
 }
 
 @media (min-width: 800px) {
