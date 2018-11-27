@@ -179,7 +179,8 @@ nav.stroke ul li a:hover:after {
   background-color: #fff;
 }
 
-#spacer img {
+#spacer img,
+#spacer-2 img  {
   width: 100%;
   
 }
@@ -194,7 +195,7 @@ nav.stroke ul li a:hover:after {
 #portfolio {
   z-index: 0;
   background-color: #FFF;
-  padding: 1em 0 3em 0;
+  padding: 1em 0 1em 0;
 }
 
 /*/////// CARD EFFECTS //////////*/
